@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Idea Refinery Project</title>
 </head>
-<body>
+<body class="fade-in-element">
     <section class="navigation-container">
         <div class="nav-body item-position-fit">
             <div class="circle-logo"></div>
 
             <div class="navigation-ul">
-                <nav class="boldtext005 bigtext14">
+                <nav class="navigation-li">
                     <span title="Home">Home</span>
                     <span title="Invoices">Invoices</span>
                     <span title="Clients">Clients</span>
@@ -33,12 +33,12 @@
     
     <section class="menu-container item-position-fit">
         <div class="menu-col">
-            <span class="boldtext005 bigtext13">Cashflow <span class="rod tab "></span></span>
-            <span class="tab color-purple boldtext005 bigtext13">Last 7 days</span>
-            <span class="tab boldtext005 bigtext13">Last 30 days</span>
-            <span class="tab boldtext005 bigtext13">All-time</span>
+            <span class="tab-f">Cashflow <span class="rod tab "></span></span>
+            <span class="tab color-purple">Last 7 days</span>
+            <span class="tab">Last 30 days</span>
+            <span class="tab">All-time</span>
             <span>
-                <button class="btntab new-invoice bigtext13 boldtext007">+ New invoice</button>
+                <button class="btntab new-invoice">+ New invoice</button>
             </span>
 
         </div>
@@ -50,34 +50,34 @@
             <div class="revenue-menu-col">
                 <div class="tab">
                     <div>
-                        <span class="mr-150 color-grey bigtext12 boldtext005">Revenue</span>
-                        <span class="mr-30 color-grey bigtext12 boldtext005">+4.75%</span>
+                        <span class="revenue-text-1">Revenue</span>
+                        <span class="revenue-text-2">+4.75%</span>
                     </div>
-                    <div class="mt-20 boldtext005 bigtext18">$405,091.00</div>
+                    <div class="revenue-price">$405,091.00</div>
                 </div>
         
                 <div class="tab">
                     <div>
-                        <span class="mr-150 color-grey bigtext12 boldtext005">Overdue invoices</span>
-                        <span class="mr-30 color-red bigtext12 boldtext005">+54.02%</span>
+                        <span class="revenue-text-1">Overdue invoices</span>
+                        <span class="revenue-text-2">+54.02%</span>
                     </div>
-                    <div class="mt-20 boldtext005 bigtext18">$12,787.00</div>
+                    <div class="revenue-price">$12,787.00</div>
                 </div>
         
                 <div class="tab">
                     <div>
-                        <span class="mr-150 color-grey bigtext12 boldtext005">Outstanding invoices</span>
-                        <span class="mr-30 color-grey bigtext12 boldtext005">-1.39%</span>
+                        <span class="revenue-text-1">Outstanding invoices</span>
+                        <span class="revenue-text-2">-1.39%</span>
                     </div>
-                    <div class="mt-20 boldtext005 bigtext18">$245,988.00</div>
+                    <div class="revenue-price">$245,988.00</div>
                 </div>
         
-                <div>
+                <div class="tab-l">
                     <div>
-                        <span class="mr-150 color-grey bigtext13 boldtext005">Expenses</span>
-                        <span class="mr-30 color-red bigtext13 boldtext005">+10.18%</span>
+                        <span class="revenue-text-1">Expenses</span>
+                        <span class="revenue-text-3">+10.18%</span>
                     </div>
-                    <div class="mt-20 boldtext005 bigtext20">$30,156.00</div>
+                    <div class="revenue-price">$30,156.00</div>
                 </div>
             </div>
         </div>
@@ -99,23 +99,23 @@
                     <!-- first row -->
                     <div class="recentActivity-data-row">
                         <div class="recentActivity-data-col-1">
-                            <div class="color-grey"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+                            <div class="recent-icon"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
                             <div class="recentActivity-data-entry">
-                                <span class="boldtext005 bigtext15">$7,600.00 USD</span>
+                                <span class="recentActivity-data-entry-data">$7,600.00 USD</span>
                                 <span class="paid">Paid</span>
         
-                                <div class="mt-8 bigtext13 color-grey boldtext005">$500.00 tax</div>
+                                <div class="recentActivity-entry-data-sub">$500.00 tax</div>
                             </div>
                         </div>
             
                         <div class="recentActivity-entry-2">
-                            <div class="boldtext005 bigtext15">Reform</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005">Website redesign</div>
+                            <div class="recentActivity-data-entry-data">Reform</div>
+                            <div class="recentActivity-entry-data-sub">Website redesign</div>
                         </div>
             
                         <div>
-                            <div title="View transaction" class="cursor-pointer color-purple boldtext005 bigtext15">View transaction</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005 align-right">Invoice <span class="boldtext005 color-black">#00012</span></div>
+                            <div title="View transaction" class="cursor-pointer color-purple recentActivity-data-entry-data">View transaction</div>
+                            <div class="recentActivity-entry-data-sub align-right">Invoice <span class="boldtext005 color-black">#00012</span></div>
                         </div>
                     </div>
 
@@ -127,22 +127,22 @@
                     <!-- second row -->
                     <div class="recentActivity-data-row">
                         <div class="recentActivity-data-col-1">
-                            <div class="color-grey"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></div>
+                            <div class="recent-icon"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></div>
                             <div class="recentActivity-data-entry">
-                                <span class="boldtext005 bigtext15">$10,000.00 USD</span>
+                                <span class="recentActivity-data-entry-data">$10,000.00 USD</span>
                                 <span class="withdraw">Withdraw</span>
 
                             </div>
                         </div>
             
                         <div class="recentActivity-entry-2">
-                            <div class="boldtext005 bigtext15">Tom Cook</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005">Salary</div>
+                            <div class="recentActivity-data-entry-data">Tom Cook</div>
+                            <div class="recentActivity-entry-data-sub">Salary</div>
                         </div>
             
                         <div>
-                            <div title="View transaction" class="cursor-pointer color-purple boldtext005 bigtext15">View transaction</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005 align-right">Invoice <span class="boldtext005 color-black">#00011</span></div>
+                            <div title="View transaction" class="cursor-pointer color-purple recentActivity-data-entry-data">View transaction</div>
+                            <div class="recentActivity-entry-data-sub align-right">Invoice <span class="boldtext005 color-black">#00011</span></div>
                         </div>
                     </div>
                 </div>
@@ -153,23 +153,23 @@
                     <!-- third row -->
                     <div class="recentActivity-data-row">
                         <div class="recentActivity-data-col-1">
-                            <div class="color-grey"><i class="fa fa-refresh" aria-hidden="true"></i></div>
+                            <div class="recent-icon"><i class="fa fa-refresh" aria-hidden="true"></i></div>
                             <div class="recentActivity-data-entry">
-                                <span class="boldtext005 bigtext15">$2,000.00 USD</span>
+                                <span class="recentActivity-data-entry-data">$2,000.00 USD</span>
                                 <span class="overdue">Overdue</span>
 
-                                <div class="mt-8 bigtext13 color-grey boldtext005">$130.00 tax</div>
+                                <div class="recentActivity-entry-data-sub">$130.00 tax</div>
                             </div>
                         </div>
             
                         <div class="recentActivity-entry-2">
-                            <div class="boldtext005 bigtext15">Tuple</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005">Logo design</div>
+                            <div class="recentActivity-data-entry-data">Tuple</div>
+                            <div class="recentActivity-entry-data-sub">Logo design</div>
                         </div>
             
                         <div>
-                            <div title="View transaction" class="cursor-pointer color-purple boldtext005 bigtext15">View transaction</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005 align-right">Invoice <span class="boldtext005 color-black">#00009</span></div>
+                            <div title="View transaction" class="cursor-pointer color-purple recentActivity-data-entry-data">View transaction</div>
+                            <div class="recentActivity-entry-data-sub align-right">Invoice <span class="boldtext005 color-black">#00009</span></div>
                         </div>
                     </div>
                 </div>
@@ -187,23 +187,23 @@
                     <!-- fourth row -->
                     <div class="recentActivity-data-row">
                         <div class="recentActivity-data-col-1">
-                            <div class="color-grey"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
+                            <div class="recent-icon"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></div>
                             <div class="recentActivity-data-entry">
-                                <span class="boldtext005 bigtext15">$14,000.00 USD</span>
+                                <span class="recentActivity-data-entry-data">$14,000.00 USD</span>
                                 <span class="paid">Paid</span>
         
-                                <div class="mt-8 bigtext13 color-grey boldtext005">$900.00 tax</div>
+                                <div class="recentActivity-entry-data-sub">$900.00 tax</div>
                             </div>
                         </div>
             
                         <div class="recentActivity-entry-2">
-                            <div class="boldtext005 bigtext15">SavvyCal</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005">Website redesign</div>
+                            <div class="recentActivity-data-entry-data">SavvyCal</div>
+                            <div class="recentActivity-entry-data-sub">Website redesign</div>
                         </div>
             
                         <div>
-                            <div title="View transaction" class="cursor-pointer color-purple boldtext005 bigtext15">View transaction</div>
-                            <div class="mt-8 bigtext13 color-grey boldtext005 align-right">Invoice <span class="boldtext005 color-black">#00010</span></div>
+                            <div title="View transaction" class="cursor-pointer color-purple recentActivity-data-entry-data">View transaction</div>
+                            <div class="recentActivity-entry-data-sub align-right">Invoice <span class="boldtext005 color-black">#00010</span></div>
                         </div>
                     </div>
     
@@ -221,35 +221,37 @@
             <div class="clients-modals-of-col">
 
                 <!-- first one -->
-                <div class="clients-modal-container">
-                    <div class="clients-modal-heading">
-                        <div>
-                            <div class="box-logo-c">
-                                <div class="box-logo-1"></div>
-                            </div>
-                        </div>
-                    
-                    <div class="clients-heading-name mr-350">Tuple</div>
-                    <div class="ellipsis-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
-                    </div>
-
-                    <div class="clients-modal-body">
-                        <div class="clients-modal-col">
-                            <div class="item">Last invoice</div>
-                            <div class="item2 color-grey">December 13, 2022</div>
-                        </div>
-
-                        <div class="clients-modal-col">
-                            <div class="item">Amount</div>
+                    <div class="clients-modal-container">
+                        <div class="clients-modal-heading">
                             <div>
-                                <span class="item2">$2,000.00</span>
-                                <span class="overdue">Overdue</span>
-                                <!-- <span class="paid">Paid</span> -->
-                                <!-- <span class="withdraw">Withdraw</span> -->
+                                <div class="box-logo-c">
+                                    <div class="box-logo-1"></div>
+                                </div>
+                            </div>
+                        
+                        <div class="clients-heading-name-1">Tuple</div>
+                        <div class="ellipsis-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
+                        </div>
+    
+                        <div class="clients-modal-body">
+                            <div class="clients-modal-col">
+                                <div class="item">Last invoice</div>
+                                <div class="item2 color-grey">December 13, 2022</div>
+                            </div>
+    
+                            <div class="clients-modal-col">
+                                <div class="item">Amount</div>
+                                <div>
+                                    <span class="item2">$2,000.00</span>
+                                    <span class="overdue">Overdue</span>
+                                    <!-- <span class="paid">Paid</span> -->
+                                    <!-- <span class="withdraw">Withdraw</span> -->
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+          
+                
 
                 <!-- second one -->
                 <div class="clients-modal-container">
@@ -260,7 +262,7 @@
                             </div>
                         </div>
                     
-                    <div class="clients-heading-name mr-320">SavvyCal</div>
+                    <div class="clients-heading-name-2">SavvyCal</div>
                     <div class="ellipsis-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
                     </div>
 
@@ -290,7 +292,7 @@
                             </div>
                         </div>
                     
-                    <div class="clients-heading-name mr-320">Reform</div>
+                    <div class="clients-heading-name-3">Reform</div>
                     <div class="ellipsis-icon"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></div>
                     </div>
         
