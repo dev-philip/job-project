@@ -20,6 +20,7 @@
 .color-blue{ color: var(--color-blue); }
 .color-orange{ color: var(--color-orange); }
 .color-black{ color: var(--color-black); }
+.color-red{ color: var(--color-red); }
 
 .boldtext001{ font-weight: 100;}
 .boldtext003{ font-weight: 300;}
@@ -46,14 +47,34 @@
 .bigtext23{ font-size: 23px;}
 .bigtext24{ font-size: 24px;}
 .bigtext25{ font-size: 25px;}
+.bigtext26{ font-size: 26px;}
+.bigtext27{ font-size: 27px;}
+.bigtext28{ font-size: 28px;}
+.bigtext29{ font-size: 29px;}
+.bigtext30{ font-size: 30px;}
 
 .mt-8{margin-top: 8px}
 .mt-9{margin-top: 9px}
 .mt-10{margin-top: 10px}
+.mt-15{margin-top: 15px}
+.mt-16{margin-top: 16px}
+.mt-17{margin-top: 17px}
+.mt-18{margin-top: 18px}
+.mt-19{margin-top: 19px}
+.mt-20{margin-top: 20px}
 .mt-30{margin-top: 30px}
 
+
+.mr-30{margin-right: 30px}
+.mr-45{margin-right: 45px}
 .mr-50{margin-right: 50px}
 .mr-85{margin-right: 85px}
+.mr-100{margin-right: 100px}
+.mr-150{margin-right: 150px}
+.mr-200{margin-right: 200px}
+.align-right{text-align: right}
+
+.cursor-pointer{cursor: pointer;}
 
 .item-position-fit{
   width: 85%;
@@ -66,15 +87,18 @@ body{
     font-family: var(--font-family);
 }
 
+.navigation-container{
+  box-shadow: 2px 2px 4px #e8e8ea;
+  height: 40px;
+}
 
 .navigation-container .nav-body{
     /* border: 1px solid black; */
-    box-shadow: 2px 2px 4px #e8e8ea;
-    height: 50px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+
+    flex-wrap: nowrap;
 }
 
 .circle-logo {
@@ -110,7 +134,9 @@ body{
 
 .bell-icon{
     /* border: 1px solid green; */
+    margin-left: 200px;
     line-height: 30px;
+    color: var(--color-lightgrey);
 }
 .circle {
     /* border: 1px solid blue; */
@@ -133,18 +159,85 @@ body{
   }
 
 /******************************************************
+**************** Start of Menu container styling ******/
+.menu-container{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.menu-col{
+  cursor: pointer;
+}
+
+.menu-col .tab{
+  margin-right: 45px;
+}
+
+.menu-col .btntab{
+  float: right;
+}
+
+.new-invoice{
+  color: white;
+  background-color: var(--color-purple);
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.rod{
+  margin-left: 20px;
+  padding-bottom: 8px;
+  border: 1px solid #f3f3f4;
+}
+
+
+/******************************************************
+**************** End of Menu container styling ******/
+
+
+/******************************************************
+**************** Start of revenue-container styling ******/
+
+.revenue-container{
+  width: 100%;
+  /* border: 1px solid red; */
+  border-top: 1px solid #f3f3f4;
+  border-bottom: 1px solid #f3f3f4;
+  background-color: #FBFBF9;
+  /* background: linear-gradient(to bottom, #ff0000, #00ff00, #0000ff); */
+}
+
+.revenue-menu-col{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.revenue-menu-col .tab{
+  border-right: 1px solid red;
+  border-right: 1px solid #f3f3f4;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/******************************************************
+**************** End of revenue-container styling ******/
+
+/******************************************************
 **************** Start of recentActivity styling ******/
   .recentActivity-container{
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .recentActivity-heading{}
 
   .recentActivity-head-toolbar{
-    margin-top: 30px;
+    /* margin-top: 15px; */
     width: 100%;
     height: 40px;
-    background-color: #d9dadd;
+    background-color:#F0F0F0;
     line-height: 40px;
   }
 
@@ -157,16 +250,27 @@ body{
     align-items: center;
   }
 
+  .recent-bdr-btm {
+    width: 100%;
+    border-bottom: 1px solid #F0F0F0;
+  }
+
   .recentActivity-data-col-1{
     display: flex;
     justify-content: center;
-     margin-top: 25px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     width: 30%;
   }
 
   .recentActivity-data-entry{
     margin-left: 20px;
+    width: 100%;
   }
 
+ .recentActivity-entry-2{
+  width: 30%;
+ }
  
 
   /****************************************************
@@ -177,7 +281,7 @@ body{
   *********** Start of recent-clients styling *******/
 
   .recent-clients-container{
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   .recent-clients-body{}
@@ -188,15 +292,14 @@ body{
     align-items: center;
   }
 
-  /* .recent-clients-navigation .nav1{
+   /* .recent-clients-navigation .nav1{
     border: 1px solid blue;
     font-weight: 700;
-  }
+  } */
 
   .recent-clients-navigation .nav2{
-    border: 1px solid red;
     cursor: pointer;
-  } */
+  } 
 
   .clients-modals-of-col{
     display: flex;
@@ -205,7 +308,7 @@ body{
   }
 
   .clients-modal-container{
-    margin-top: 30px;
+    margin-top: 20px;
     width: 500px;
     border: 1px solid #c6c9d0;
     border-radius: 9px 9px 9px 9px;
@@ -217,14 +320,14 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 80px;
+    height: 60px;
     border-bottom: 1px solid transparent;
     background-color: #f8f9fa;
   }
 
   .box-logo-c{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin-left: 15px;
     border: 1px solid #c6c9d0;
     border-radius: 5px 5px 5px 5px;
@@ -236,9 +339,9 @@ body{
   }
 
   .box-logo-1{
-    width: 35px;
-    height: 35px;
-    border-radius: 9px 9px 9px 9px;
+    width: 25px;
+    height: 25px;
+    border-radius: 7px 7px 7px 7px;
     /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-blue);
     display: flex;
@@ -249,8 +352,11 @@ body{
   .clients-heading-name{
     font-size: 14px;
     font-weight: 500;
-    margin-right: 200px;
+    /* margin-right: 320px; */
   }
+
+  .mr-320{margin-right: 320px}
+  .mr-350{margin-right: 350px}
  
   .ellipsis-icon{
     margin-right: 30px;
@@ -265,19 +371,14 @@ body{
 
   .clients-modal-col .item{
     color: var(--color-lightgrey);
-    font-size: 14px;
-    font-weight: 400;
+     font-weight: 500;
+    font-size: 13px;
+   
   }
 
   .clients-modal-col .item2{
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-  .clients-modal-col .item{
-    color: var(--color-lightgrey);
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 13px;
+    font-weight: 500;
   }
 
   .overdue{
@@ -286,6 +387,7 @@ body{
     padding: 2px 15px 2px 15px;
     border-radius: 5px;
     font-size: 13px;
+    font-weight: 400;
   }
 
   .paid{
@@ -293,22 +395,24 @@ body{
     background-color: var(--color-chill-green);
     padding: 2px 15px 2px 15px;
     border-radius: 5px;
-    font-size: 13px
+    font-size: 13px;
+    font-weight: 400;
   }
 
   .withdraw{
-    color: lightgray;
-    background-color: #4a515e;
+    color: black;
+    background-color:  #F0F0F0;
     padding: 2px 15px 2px 15px;
     border-radius: 5px;
-    font-size: 13px
+    font-size: 13px;
+    font-weight: 400;
   }
 
   
 
   .box-logo-2{
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 36%;
     /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-orange);
@@ -319,12 +423,18 @@ body{
   }
 
   .box-logo-3{
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
     border-radius: 5px 5px 5px 5px;
     /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-black);
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    .element {
+      /* Your responsive styles for screens of 1200px or smaller */
+    }
   }
