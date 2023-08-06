@@ -81,9 +81,21 @@
   margin: 0 auto;
 }
 
+.fade-in-element {
+  opacity: 0;
+  animation: fadeInAnimation 1s ease forwards; 
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
 body{
-    /* background: red; */
-    /* background-color: var(--color-purple); */
     font-family: var(--font-family);
 }
 
@@ -93,7 +105,6 @@ body{
 }
 
 .navigation-container .nav-body{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -102,7 +113,6 @@ body{
 }
 
 .circle-logo {
-    /* border: 1px solid orange; */
     width: 35px;
     height: 35px;
     border-radius: 50%; 
@@ -115,11 +125,15 @@ body{
  
 
   .navigation-ul{
-    /* border: 1px solid red; */
     width: 80%;
     height: 30px;
     display: flex;
     justify-content: center;
+  }
+
+  .navigation-li{
+    font-size: 14px;
+    font-weight: 500;
   }
 
   .navigation-ul nav {
@@ -133,13 +147,11 @@ body{
   }
 
 .bell-icon{
-    /* border: 1px solid green; */
     margin-left: 200px;
     line-height: 30px;
     color: var(--color-lightgrey);
 }
 .circle {
-    /* border: 1px solid blue; */
     margin-left: 30px;
     float: left;
     width: 35px;
@@ -169,8 +181,15 @@ body{
   cursor: pointer;
 }
 
+.menu-col .tab-f{
+  font-weight: 500;
+  font-size: 13px;
+}
+
 .menu-col .tab{
   margin-right: 45px;
+  font-weight: 500;
+  font-size: 13px;
 }
 
 .menu-col .btntab{
@@ -184,6 +203,8 @@ body{
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .rod{
@@ -202,7 +223,6 @@ body{
 
 .revenue-container{
   width: 100%;
-  /* border: 1px solid red; */
   border-top: 1px solid #f3f3f4;
   border-bottom: 1px solid #f3f3f4;
   background-color: #FBFBF9;
@@ -216,10 +236,35 @@ body{
 }
 
 .revenue-menu-col .tab{
-  border-right: 1px solid red;
   border-right: 1px solid #f3f3f4;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.revenue-text-1{
+  margin-right: 150px;
+  color: var(--color-grey);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.revenue-text-2{
+  margin-right: 30px;
+  color: var(--color-grey);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.revenue-text-3{
+  color: var(--color-grey);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.revenue-price{
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /******************************************************
@@ -234,7 +279,6 @@ body{
   .recentActivity-heading{}
 
   .recentActivity-head-toolbar{
-    /* margin-top: 15px; */
     width: 100%;
     height: 40px;
     background-color:#F0F0F0;
@@ -263,9 +307,25 @@ body{
      width: 30%;
   }
 
+  .recent-icon{
+    color: var(--color-grey);
+  }
+
   .recentActivity-data-entry{
     margin-left: 20px;
     width: 100%;
+  }
+
+  .recentActivity-data-entry-data{
+    font-weight: 500;
+    font-size: 15px;
+  }
+
+  .recentActivity-entry-data-sub{
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-grey);
+    margin-top: 8px;
   }
 
  .recentActivity-entry-2{
@@ -291,11 +351,6 @@ body{
     justify-content: space-between;
     align-items: center;
   }
-
-   /* .recent-clients-navigation .nav1{
-    border: 1px solid blue;
-    font-weight: 700;
-  } */
 
   .recent-clients-navigation .nav2{
     cursor: pointer;
@@ -342,17 +397,26 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 7px 7px 7px 7px;
-    /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-blue);
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .clients-heading-name{
+  .clients-heading-name-1{
     font-size: 14px;
     font-weight: 500;
-    /* margin-right: 320px; */
+    margin-right: 350px;
+  }
+  .clients-heading-name-2{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 320px;
+  }
+  .clients-heading-name-3{
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 320px;
   }
 
   .mr-320{margin-right: 320px}
@@ -414,7 +478,6 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 36%;
-    /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-orange);
     display: flex;
     justify-content: center;
@@ -426,7 +489,6 @@ body{
     width: 25px;
     height: 25px;
     border-radius: 5px 5px 5px 5px;
-    /* border-radius: top-left top-right bottom-right bottom-left; */
     background-color: var(--color-black);
     display: flex;
     justify-content: center;
@@ -434,7 +496,152 @@ body{
   }
 
   @media (max-width: 1200px) {
-    .element {
-      /* Your responsive styles for screens of 1200px or smaller */
+
+    .bell-icon{
+      margin-left: 0;
     }
+
+    .clients-modals-of-col{
+      flex-direction: column; 
+    }
+
+    .revenue-menu-col{
+      flex-direction: column; 
+    }
+
+    .revenue-menu-col .tab{
+      border: none;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .revenue-menu-col .tab-l{
+      width: 100%;
+      padding-bottom: 15px;
+    }
+
+    .revenue-text-1{
+      
+    }
+
+    .revenue-text-2{
+      margin-right: 0;
+      float: right;
+    }
+
+    .revenue-text-3{
+      float: right;
+    }
+
+    .revenue-price{
+      font-size: 15px;
+    }
+
+    .recent-clients-body{
+      margin-bottom: 40px;
+    }
+  }
+
+
+  @media (max-width: 1000px) {
+
+    .clients-modal-container{
+      width: 100%;
+    }
+
+    .clients-heading-name-1{
+      margin-right: 140px;
+    }
+    .clients-heading-name-2{
+      margin-right: 120px;
+    }
+    .clients-heading-name-3{
+      margin-right: 130px;
+    }
+
+    .menu-container{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    .menu-col .tab-f{
+      font-size: 9px;
+    }
+
+    .menu-col .tab{
+      font-size: 9px;
+      margin-right: 8px;
+    }
+    
+    .rod{
+      margin-left: 2px;
+    }
+
+    .new-invoice{
+      padding: 3px;
+      font-size: 9px;
+      margin-top: 1px;
+    }
+
+    .navigation-li{
+      font-size: 10px;
+    }
+
+    .bell-icon{
+      margin-left: 0;
+      font-size: 11px;
+    }
+
+    .circle {
+      margin-left: 0;
+    }
+
+    .circle-logo {
+      width: 20px;
+      height: 20px;
+    }
+
+    .circle{
+      width: 20px;
+      height: 20px;
+    }
+
+    .circle-text {
+      font-size: 11px;
+    }
+
+    .recent-icon{
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    .recentActivity-data-entry{
+      margin-left: 7px;
+    }
+
+    .recentActivity-data-entry-data{
+      font-size: 11px;
+    }
+  
+    .recentActivity-entry-data-sub{
+      font-size: 10px;
+    }
+
+
+
+    .overdue{
+      padding: 2px 10px 2px 10px;
+      font-size: 9px;
+    }
+  
+    .paid{
+      padding: 2px 10px 2px 10;
+      font-size: 9px;
+    }
+  
+    .withdraw{
+      padding: 2px 10px 2px 10px;
+      font-size: 9px;
+    }
+    
   }
